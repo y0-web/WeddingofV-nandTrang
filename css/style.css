@@ -673,8 +673,6 @@ button {
      
  }
  
- Gallery
- -------------------------------------------------------------------*/
  
  .gallery-box{
       padding: 20px 0px 0px 0px ;
@@ -735,7 +733,24 @@ button {
  .gallery-box ul li a:hover .overlay{
       opacity: 1;
  }
- 
+ .gallery-box a {
+  overflow: hidden;
+  display: block;
+  border-radius: 8px;
+}
+
+.gallery-box img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+  width: 100%;
+}
+
+.gallery-box a:hover img {
+  transform: scale(1.1);
+  /* Bỏ dòng filter nếu không muốn ảnh tối đi */
+  /* filter: brightness(80%); */
+}
+
 /* Khung chứa mỗi phần quà */
 .gift-box {
     background: #FFC0CB;
